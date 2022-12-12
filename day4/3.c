@@ -11,12 +11,7 @@ int main() {
     static char line[13];
     int start1, start2, end1, end2;
     int count, count2;
-    if( 1 <= 2 <= 5){
-        printf("true\n");
-    }
-    if( 1 <= 4 <= 3) {
-        printf("blerue\n");
-    }
+
     while (fgets(line, sizeof(line), file)) {
         //printf("Line:  %s", line);
         if (parse_string(line, &start1, &end1, &start2, &end2) == 1) {
